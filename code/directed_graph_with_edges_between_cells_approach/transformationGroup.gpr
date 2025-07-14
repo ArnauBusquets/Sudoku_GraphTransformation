@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<gxl xmlns="http://www.gupro.de/GXL/gxl-1.0.dtd">
+    <graph role="rule" edgeids="false" edgemode="directed" id="transformationGroup">
+        <attr name="$version">
+            <string>curly</string>
+        </attr>
+        <attr name="enabled">
+            <string>false</string>
+        </attr>
+        <node id="n0">
+            <attr name="layout">
+                <string>462 507 19 19</string>
+            </attr>
+        </node>
+        <node id="n1">
+            <attr name="layout">
+                <string>249 261 439 72</string>
+            </attr>
+        </node>
+        <edge from="n0" to="n0">
+            <attr name="label">
+                <string>id:n</string>
+            </attr>
+        </edge>
+        <edge from="n0" to="n0">
+            <attr name="label">
+                <string>type:Node</string>
+            </attr>
+        </edge>
+        <edge from="n1" to="n0">
+            <attr name="label">
+                <string>not:gg</string>
+            </attr>
+        </edge>
+        <edge from="n1" to="n1">
+            <attr name="label">
+                <string>type:Node</string>
+            </attr>
+        </edge>
+        <edge from="n1" to="n1">
+            <attr name="label">
+                <string>test:(col-1)/3==(n.col-1)/3</string>
+            </attr>
+        </edge>
+        <edge from="n1" to="n1">
+            <attr name="label">
+                <string>test:(row-1)/3==(n.row-1)/3</string>
+            </attr>
+        </edge>
+        <edge from="n1" to="n0">
+            <attr name="label">
+                <string>new:gg</string>
+            </attr>
+        </edge>
+        <edge from="n1" to="n1">
+            <attr name="label">
+                <string>test:(n.row==row+1 &amp; n.col==col+1)  | (n.row==row-1 &amp; n.col==col+1)</string>
+            </attr>
+        </edge>
+    </graph>
+</gxl>
